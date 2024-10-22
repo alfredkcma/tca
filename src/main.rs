@@ -11,8 +11,8 @@ fn main() {
         let c = commission(*v);
         println!("Volume is {}, Commission is {}", v, c);
     }
-    println!("Result is {:?}", shapley_value_mc(&vvec));
-    println!("Result is {:?}", shapley_value(&vvec));
+    println!("Sharley Value via Marginal Contribution is {:?}", shapley_value_mc(&vvec));
+    println!("Sharley Value is {:?}", shapley_value(&vvec));
 }
 
 fn shapley_value_mc(vvec: &Vec<i128>) -> Vec<f64> {
